@@ -2,7 +2,7 @@ import tape from "tape";
 import React from "react";
 import TestRenderer from "react-test-renderer";
 
-import HelloWorld from "../src/HelloWorld";
+import HelloWorld from "../src/hello-world.jsx";
 
 tape("Hello World", t => {
   t.plan(2);
