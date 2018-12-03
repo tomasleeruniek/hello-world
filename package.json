@@ -3,5 +3,27 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Tomas Bravo <tomas@leeruniek.nl>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "postcss": "^7.0.6",
+    "react": "^16.6.3"
+  },
+  "devDependencies": {
+    "@leeruniek/eslint-config": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-json": "^1.3.2",
+    "eslint-plugin-no-inferred-method-name": "^1.0.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-unicorn": "^6.0.1",
+    "prettier": "^1.15.3",
+    "stylelint": "^9.9.0",
+    "tape": "^4.9.1"
+  }
 }
