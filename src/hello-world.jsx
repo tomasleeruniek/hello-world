@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
-import type { Color } from "./types";
 
+import type { Color } from "./types";
 import "./hello-world.css";
 
 type Props = {

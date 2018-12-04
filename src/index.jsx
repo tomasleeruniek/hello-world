@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import HelloWorld from "./hello-world.jsx";
+import HelloWorldContainer from "./hello-world-container.jsx";
 
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(<HelloWorldContainer />, document.getElementById("root"));
