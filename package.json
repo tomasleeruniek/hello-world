@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "test": "tape -r @babel/register tests/**/*.js",
+    "test": "tape -r @babel/register -r ignore-styles tests/**/*.js",
     "lint": "eslint --ext js,jsx,html src && stylelint src"
   },
   "dependencies": {
@@ -41,6 +41,7 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-unicorn": "^6.0.1",
     "flow-bin": "^0.87.0",
+    "ignore-styles": "^5.0.1",
     "postcss-modules": "^1.4.1",
     "prettier": "^1.15.3",
     "react-test-renderer": "^16.6.3",
