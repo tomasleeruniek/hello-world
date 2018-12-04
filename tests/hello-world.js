@@ -7,8 +7,8 @@ import HelloWorld from "../src/hello-world.jsx";
 tape("Hello World", t => {
   t.plan(2);
 
-  const testRenderer = TestRenderer.create(<HelloWorld />);
+  let component = TestRenderer.create(<HelloWorld />).toJSON();
 
-  t.equal(testRenderer.type, "div");
-  t.equal(testRenderer.children, ["Hello World"]);
+  t.equal(component.type, "span");
+  t.equal(component.children, ["Hello World"]);
 });
