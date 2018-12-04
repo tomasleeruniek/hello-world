@@ -5,7 +5,7 @@ import React from "react";
 import type { Color } from "./types";
 
 type Props = {|
-  onClick: (color: Color) => void,
+  setColor: (color: Color) => void,
   color: Color
 |};
 
