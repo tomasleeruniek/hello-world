@@ -1,5 +1,7 @@
 import React from "react";
 
-const HelloWorld = () => <div className="hello-world">Hello World</div>;
+import "./hello-world.css";
+
+const HelloWorld = () => <span styleName="hello-world">Hello World!</span>;
 
 export default HelloWorld;
