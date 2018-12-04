@@ -1,3 +1,5 @@
+// @flow
+
 type Color = "red" | "green" | "blue";
 
-export const Color;
+export type { Color };
