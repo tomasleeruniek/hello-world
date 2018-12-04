@@ -1,6 +1,17 @@
 .hello-world {
   padding: 0.25em;
   border-radius: 3px;
-  background: #c03c49;
   color: white;
+}
+
+.red {
+  background: #c03c49;
+}
+
+.green {
+  background: #3cc071;
+}
+
+.blue {
+  background: #3c8bc0;
 }
