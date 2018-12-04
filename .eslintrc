@@ -1,6 +1,10 @@
 {
+  "parser": "babel-eslint",
   "extends": [
     "@leeruniek/eslint-config/targets/react",
     "@leeruniek/eslint-config/rules/flow"
+  ],
+  "plugins": [
+    "flowtype"
   ]
 }
