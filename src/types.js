@@ -1,5 +1,5 @@
 // @flow
 
-type Color = "red" | "green" | "blue";
+type ColorType = "red" | "green" | "blue";
 
-export type { Color };
+export type { ColorType };

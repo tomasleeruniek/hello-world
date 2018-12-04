@@ -1,6 +1,12 @@
+// @flow
+
 import React from "react";
 import ReactDOM from "react-dom";
 
 import HelloWorldContainer from "./hello-world-container.jsx";
 
-ReactDOM.render(<HelloWorldContainer />, document.getElementById("root"));
+const root = document.getElementById("root");
+
+if (root !== null) {
+  ReactDOM.render(<HelloWorldContainer />, root);
+}

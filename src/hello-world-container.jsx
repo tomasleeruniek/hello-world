@@ -1,38 +1,40 @@
 // @flow
 
-import React from "react";
+import * as React from "react";
 
 import HelloWorld from "./hello-world.jsx";
 import ColorButton from "./color-button.jsx";
-import type { Color } from "./types";
+import type { ColorType } from "./types";
 
-type Props = {||};
+type PropsType = {||};
 
-type State = {|
-  color?: Color
+type StateType = {|
+  color?: ColorType
 |};
 
-class HelloWorldContainer extends React.Component<Props, State> {
+class HelloWorldContainer extends React.Component<PropsType, StateType> {
   constructor() {
     super();
     this.state = { color: undefined };
     this.setColor = this.setColor.bind(this);
   }
 
-  render() {
+  render(): React.Node {
     const { color } = this.state;
 
     return (
       <div>
         <HelloWorld color={color} />
-        {["red", "green", "blue"].map(c => (
-          <ColorButton key={c} color={c} setColor={this.setColor} />
-        ))}
+        {["red", "green", "blue"].map(
+          (c): React.Node => (
+            <ColorButton key={c} color={c} setColor={this.setColor} />
+          )
+        )}
       </div>
     );
   }
 
-  setColor(color: Color) {
+  setColor(color: ColorType) {
     this.setState({ color });
   }
 }

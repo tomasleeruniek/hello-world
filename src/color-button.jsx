@@ -1,32 +1,34 @@
 // @flow
 
-import React from "react";
+import * as React from "react";
 
-import type { Color } from "./types";
+import type { ColorType } from "./types";
 
-type Props = {|
-  setColor: (color: Color) => void,
-  color: Color
+type PropsType = {|
+  setColor: (color: ColorType) => void,
+  color: ColorType
 |};
 
-class ColorButton extends React.Component<Props> {
+class ColorButton extends React.Component<PropsType> {
   constructor() {
     super();
-    this.onClick = this.onClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  render() {
-    const { setColor, color } = this.props;
+  render(): React.Node {
+    const { color } = this.props;
 
     return (
-      <button type="button" onClick={this.onClick}>
+      <button type="button" onClick={this.handleClick}>
         {color}
       </button>
     );
   }
 
-  onClick() {
-    this.props.setColor(this.props.color);
+  handleClick() {
+    const { color, setColor } = this.props;
+
+    setColor(color);
   }
 }
 

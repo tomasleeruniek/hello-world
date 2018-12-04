@@ -5,6 +5,5 @@
     "@babel/preset-flow"
   ],
   plugins: [
-    ["react-css-modules"]
   ]
 }

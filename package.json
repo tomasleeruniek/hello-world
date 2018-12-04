@@ -15,7 +15,6 @@
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-plugin-react-css-modules": "^5.0.0",
     "classnames": "^2.2.6",
     "global": "^4.3.2",
     "postcss": "^7.0.6",

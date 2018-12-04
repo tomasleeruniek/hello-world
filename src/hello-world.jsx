@@ -1,19 +1,25 @@
 // @flow
 
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
-import type { Color } from "./types";
-import "./hello-world.css";
+import type { ColorType } from "./types";
+import css from "./hello-world.css";
 
-type Props = {|
-  color?: Color
+type PropsType = {|
+  color?: ColorType
 |};
 
-const HelloWorld = React.memo((props: Props) => {
-  const { color = "red" } = props;
+const HelloWorld = React.memo<PropsType>(
+  (props): React.Node => {
+    const { color = "red" } = props;
 
-  return <span styleName={classnames("hello-world", color)}>Hello World!</span>;
-});
+    return (
+      <span className={classnames(css["hello-world"], css[color])}>
+        Hello World!
+      </span>
+    );
+  }
+);
 
 export default HelloWorld;
