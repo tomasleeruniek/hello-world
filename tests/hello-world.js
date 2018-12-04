@@ -10,5 +10,5 @@ tape("Hello World", t => {
   let component = TestRenderer.create(<HelloWorld />).toJSON();
 
   t.equal(component.type, "span");
-  t.equal(component.children, ["Hello World!"]);
+  t.deepEqual(component.children, ["Hello World!"]);
 });
