@@ -5,6 +5,7 @@ import * as React from "react";
 import HelloWorld from "./hello-world.jsx";
 import ColorButton from "./color-button.jsx";
 import type { ColorType } from "./types";
+import { COLORS } from "./constants";
 
 type PropsType = {||};
 
@@ -21,7 +22,7 @@ class HelloWorldContainer extends React.Component<PropsType, StateType> {
     return (
       <div>
         <HelloWorld color={color} />
-        {["red", "green", "blue"].map(
+        {COLORS.map(
           (c): React.Node => (
             <ColorButton key={c} color={c} setColor={this.setColor} />
           )
