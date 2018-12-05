@@ -13,11 +13,7 @@ type StateType = {|
 |};
 
 class HelloWorldContainer extends React.Component<PropsType, StateType> {
-  constructor() {
-    super();
-    this.state = { color: undefined };
-    this.setColor = this.setColor.bind(this);
-  }
+  state = { color: undefined };
 
   render(): React.Node {
     const { color } = this.state;
@@ -34,9 +30,9 @@ class HelloWorldContainer extends React.Component<PropsType, StateType> {
     );
   }
 
-  setColor(color: ColorType) {
+  setColor = (color: ColorType) => {
     this.setState({ color });
-  }
+  };
 }
 
 export default HelloWorldContainer;

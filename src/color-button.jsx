@@ -10,11 +10,6 @@ type PropsType = {|
 |};
 
 class ColorButton extends React.Component<PropsType> {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this);
-  }
-
   render(): React.Node {
     const { color } = this.props;
 
@@ -25,11 +20,11 @@ class ColorButton extends React.Component<PropsType> {
     );
   }
 
-  handleClick() {
+  handleClick = () => {
     const { color, setColor } = this.props;
 
     setColor(color);
-  }
+  };
 }
 
 export default ColorButton;
